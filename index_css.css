@@ -1,0 +1,6 @@
+.导航栏 {
+  display: flex;              /* 开启弹性布局，子元素默认横向排列 */
+  align-items: center;        /* 交叉轴（这里是垂直方向）居中 */
+  justify-content: space-between; /* 主轴（水平）两端对齐，中间留空 */
+  gap: 1.5rem;      /* 项与项之间的间距 */
+}
