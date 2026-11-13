@@ -1,6 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(rgb(255, 232, 178) 0%, rgb(255, 241, 210) 100%);
+  min-height: 100vh;
+}
+
+.顶部 {
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  /* width: 100%; */
+  height: 2vw;
+  /* z-index: 1000; */
+  /* 确保在其他内容之上 */
+  /* margin: 0; */
+  /* text-align: center; */
+  /* padding: 0; */
+  background: rgb(255, 255, 255);
+  display: flex;
+  /* 子元素横排 */
+  justify-content: space-between;
+  /* logo 靠左，导航栏靠右 */
+
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 207, 95);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 链接在导航栏里垂直居中 */
+  font-size: 0.65rem;      /* 相对根字号 */
+}
+
 .导航栏 {
-  display: flex;              /* 开启弹性布局，子元素默认横向排列 */
-  align-items: center;        /* 交叉轴（这里是垂直方向）居中 */
-  justify-content: space-between; /* 主轴（水平）两端对齐，中间留空 */
-  gap: 1.5rem;      /* 项与项之间的间距 */
+  width: 100%;
+  height: 100%;
+  background: darkorange;
+  flex: 9;
+  display: flex;
+  justify-content: center;
+}
+
+.导航栏 nav {
+  /* width: 100%; */
+  height: 100%;
+  flex: 1;
+  /* 占满 .导航栏 的剩余空间 */
+  display: flex;
+  /* <nav> 变成 flex 容器 */
+  justify-content: flex-start;
+  /* 所有间距完全相等 */
+  align-items: center;
+  /* 链接在导航栏里垂直居中 */
+  /* gap: 3rem; */
+  /* 控制里面 <a> 之间的间距 */
+
+}
+
+.导航项 {
+  text-decoration: none;
+  /* 去掉下划线 */
+  color: black;
+  /* font-weight: 500; */
+  margin-left: 3rem;
+  /* 整个 nav 往右挪 2rem */
+}
+
+.导航项:hover {
+  text-decoration: underline;
 }
